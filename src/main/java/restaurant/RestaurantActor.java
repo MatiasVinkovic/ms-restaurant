@@ -13,11 +13,7 @@ public class RestaurantActor implements Actor {
         if (msg instanceof OrderRequest req) {
             System.out.println("[RESTO] Reçu commande de : " + req.getDishName());
 
-            // On simule une petite action de cuisine
-            Thread.sleep(1000);
-
-            // On répond à l'expéditeur via le contexte
-            ctx.reply(new OrderResponse("PRÊT : " + req.getDishName() + " est sortie du four !"));
         }
+
     }
 }
