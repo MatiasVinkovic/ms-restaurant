@@ -15,12 +15,14 @@ public class RestaurantApp {
         ActorSystem system = SAF.start(RestaurantApp.class, "ms-restaurant", false, args);
         DiscoveryClient dc = SAF.getContext().getBean(DiscoveryClient.class);
 
-        System.out.println("Microservice Restaurant prêt et acteur 'tom' en ligne.");
+        System.out.println("========================================");
+        System.out.println("Microservice JIRA démarre...");
+        System.out.println("========================================");
 
-        // Je créer 2 acteurs dans mon microservice, qui vont communiquer entre eux (communication local)
-        ActorRef tom = system.createActor(RestaurantActor.class, "tom");
+        // Créer l'acteur JiraActor (centralisateur de tickets)
+        ActorRef jira = system.createActor(JiraActor.class, "jira-manager");
 
-
+        System.out.println("[INFO] Acteur JiraActor créé et prêt à recevoir des tickets!");
 
 
     }
