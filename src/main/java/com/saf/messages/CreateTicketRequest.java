@@ -3,24 +3,21 @@ package com.saf.messages;
 import com.saf.core.Message;
 
 public class CreateTicketRequest implements Message {
-    private String title;
-    private String description;
-    private String priority;
+
+    private TicketCreateDTO ticket;
 
     public CreateTicketRequest() {}
 
-    public CreateTicketRequest(String title, String description, String priority) {
-        this.title = title;
-        this.description = description;
-        this.priority = priority;
+    public CreateTicketRequest(TicketCreateDTO ticket) {
+        this.ticket = ticket;
     }
 
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    public TicketCreateDTO getTicket() {
+        return ticket;
+    }
 
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
-
-    public String getPriority() { return priority; }
-    public void setPriority(String priority) { this.priority = priority; }
+    @Override
+    public String toString() {
+        return "Ticket created ->\n" + ticket;
+    }
 }
