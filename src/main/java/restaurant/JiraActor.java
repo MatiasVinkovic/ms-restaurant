@@ -38,7 +38,8 @@ public class JiraActor implements Actor {
                 String workerName = "Reparateur-" + ticketId;
 
                 // Utilisation de createActor validée par ton IDE
-                ActorRef reparateur = system.createActor(ReparatorActor.class, workerName);
+                @SuppressWarnings("unchecked")
+                ActorRef reparateur = system.createActor((Class<? extends Actor>) Class.forName("restaurant.ReparatorActor"), workerName);
 
                 if (reparateur != null) {
                     System.out.println("[JiraActor] > Un réparateur est assigné : " + workerName);
