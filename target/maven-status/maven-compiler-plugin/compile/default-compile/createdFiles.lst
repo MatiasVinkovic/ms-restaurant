@@ -5,8 +5,8 @@ restaurant/JiraActor.class
 restaurant/ReparatorActor$HardwareRepairStrategy.class
 restaurant/ReparatorActor$SoftwareRepairStrategy.class
 com/saf/messages/ListTicketsResponse.class
-com/saf/messages/TicketPriority.class
 com/saf/messages/TicketStatus.class
+com/saf/messages/TicketPriority.class
 restaurant/RestaurantApp.class
 com/saf/messages/AssignRepairRequest.class
 com/saf/messages/RepairCategory.class

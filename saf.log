@@ -123,3 +123,28 @@
 [2025-12-26 17:07:25] [ERROR] [jira-manager] CRASH -> Exception during CreateTicketRequest : Cannot invoke "com.saf.messages.TicketCreateDTO.getTitle()" because the return value of "com.saf.messages.CreateTicketRequest.getTicket()" is null
 [2025-12-26 17:07:25] [WARN] [jira-manager] SUPERVISION -> Restarting actor instance...
 [2025-12-26 17:07:25] [INFO] [jira-manager] RESTART -> Actor successfully healed and ready.
+[2025-12-26 17:26:21] [INFO] [jira-manager] BORN -> Actor created successfully 
+[2025-12-26 17:26:51] [INFO] [jira-manager] RECEIVE -> Processing message: CreateTicketRequest
+[2025-12-26 17:26:51] [INFO] [REPARATEUR-1] BORN -> Actor created successfully 
+[2025-12-26 17:26:51] [INFO] [jira-manager] RECEIVE -> Processing message: CreateTicketRequest
+[2025-12-26 17:26:51] [INFO] [REPARATEUR-2] BORN -> Actor created successfully 
+[2025-12-26 17:26:53] [INFO] [jira-manager] RECEIVE -> Processing message: CreateTicketRequest
+[2025-12-26 17:26:53] [INFO] [REPARATEUR-3] BORN -> Actor created successfully 
+[2025-12-26 17:26:53] [INFO] [jira-manager] RECEIVE -> Processing message: CreateTicketRequest
+[2025-12-26 17:26:53] [INFO] [REPARATEUR-4] BORN -> Actor created successfully 
+[2025-12-26 17:26:53] [INFO] [REPARATEUR-2] RECEIVE -> Processing message: AssignRepairRequest
+[2025-12-26 17:26:55] [INFO] [REPARATEUR-1] RECEIVE -> Processing message: AssignRepairRequest
+[2025-12-26 17:27:00] [INFO] [jira-manager] RECEIVE -> Processing message: CreateTicketRequest
+[2025-12-26 17:27:00] [INFO] [REPARATEUR-5] BORN -> Actor created successfully 
+[2025-12-26 17:27:00] [INFO] [jira-manager] RECEIVE -> Processing message: CreateTicketRequest
+[2025-12-26 17:27:00] [INFO] [REPARATEUR-6] BORN -> Actor created successfully 
+[2025-12-26 17:27:00] [INFO] [jira-manager] RECEIVE -> Processing message: ListTicketsRequest
+[2025-12-26 17:27:02] [INFO] [REPARATEUR-6] RECEIVE -> Processing message: AssignRepairRequest
+[2025-12-26 17:27:04] [INFO] [REPARATEUR-5] RECEIVE -> Processing message: AssignRepairRequest
+[2025-12-26 17:27:09] [INFO] [jira-manager] RECEIVE -> Processing message: DeleteTicketRequest
+[2025-12-26 17:27:09] [INFO] [jira-manager] RECEIVE -> Processing message: ListTicketsRequest
+[2025-12-26 17:27:17] [INFO] [jira-manager] RECEIVE -> Processing message: CreateTicketRequest
+[2025-12-26 17:27:17] [ERROR] [jira-manager] CRASH -> Exception during CreateTicketRequest : Cannot invoke "com.saf.messages.TicketCreateDTO.getTitle()" because the return value of "com.saf.messages.CreateTicketRequest.getTicket()" is null
+[2025-12-26 17:27:17] [WARN] [jira-manager] SUPERVISION -> Restarting actor instance...
+[2025-12-26 17:27:17] [INFO] [jira-manager] RESTART -> Actor successfully healed and ready.
+[2025-12-26 17:36:45] [INFO] [jira-manager] BORN -> Actor created successfully 
